@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Print Numbers</title>
+</head>
+<body>
+  <h1>Print Numbers Between Two Values</h1>
+
+  <label>From: </label>
+  <input type="number" id="fn"><br><br>
+
+  <label>To: </label>
+  <input type="number" id="sn"><br><br>
+
+  <button id="button">Print</button><br><br>
+
+  <textarea id="answer" rows="20" cols="30" readonly></textarea>
+
+  <script>
+    button.onclick= ()=> {
+      var fn = parseInt(document.getElementById("fn").value);
+      var sn = parseInt(document.getElementById("sn").value);
+      var answer = document.getElementById("answer");
+      answer.value = ""; // clear previous output
+
+      if (isNaN(fn) || isNaN(sn) || fn > sn) {
+        answer.value = "Invalid input!";
+        return;
+      }
+
+      for (let i = fn; i <= sn; i++) {
+        answer.value += i + "\n";
+      }
+    }
+  </script>
+</body>
+</html>

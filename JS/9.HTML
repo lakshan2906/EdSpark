@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Dropdown</title>
+</head>
+
+<body>
+    <h1>Product Name</h1>
+
+    <label for="categoryDropdown">Select a product Category:</label>
+    <select id="categoryDropdown">
+        <option value="">-- Select Category --</option>
+    </select>
+
+    <h2>Products:</h2>
+    <ul id="productList"></ul>
+
+    <script>
+        const jsonData = [
+            { id: 1, category: "Electronics", name: "Laptop" },
+            { id: 2, category: "Clothing", name: "T-Shirt" },
+            { id: 3, category: "Electronics", name: "Smartphone" },
+            { id: 4, category: "Home", name: "Lamp" },
+            { id: 5, category: "Clothing", name: "Jeans" },
+            { id: 6, category: "Home", name: "Jeans1" },
+            { id: 7, category: "Home", name: "Jeans2" }
+        ];
+
+        const allCategories = [...new Set(jsonData.map(item => item.category))];
+        const dropdown = document.getElementById('categoryDropdown');
+        const productList = document.getElementById('productList');
+
+        
+        allCategories.forEach(cat => {
+            const option = document.createElement("option");
+            option.value = cat;
+            option.textContent = cat;
+            dropdown.appendChild(option);
+        });
+
+        dropdown.addEventListener('change', function () {
+            const selectedCategory = this.value;
+            productList.innerHTML = ""; // Clear previous list
+
+            if (selectedCategory) {
+                const filteredProducts = jsonData.filter(item => item.category === selectedCategory);
+                filteredProducts.forEach(product => {
+                    const listItem = document.createElement("li");
+                    listItem.textContent = product.name;
+                    productList.appendChild(listItem);
+                });
+            }
+        });
+    </script>
+
+</body>
+
+</html>

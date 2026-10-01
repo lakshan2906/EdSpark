@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Function Example</title>
+</head>
+<body>
+  <h1>Welcome!</h1>
+
+  <input type="text" id="username" placeholder="Enter your name">
+  <button id="button">Greet Me</button>
+
+  <p id="message"></p>
+
+  <script>
+    // Function definition
+    button.onclick =()=> {
+      var name = document.getElementById("username").value;
+      var message = document.getElementById("message");
+
+      if (name.trim() == "") {
+        message.innerText = "Please enter your name.";
+      } else {
+        message.innerText = "hi, " + name + "! Welcome to the site.";
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Arithmetic with Switch Case</title>
+</head>
+<body>
+  <h1>Simple Calculator</h1>
+
+  <input type="number" id="num1" placeholder="First number">
+  <input type="number" id="num2" placeholder="Second number">
+
+  <select id="operator">
+    <option value="+">Add (+)</option>
+    <option value="-">Subtract (-)</option>
+    <option value="*">Multiply (*)</option>
+    <option value="/">Divide (/)</option>
+  </select>
+
+  <button onclick="calculate()">Calculate</button>
+
+  <p id="result"></p>
+
+  <script>
+    function calculate() {
+      let num1 = parseFloat(document.getElementById("num1").value);
+      let num2 = parseFloat(document.getElementById("num2").value);
+      let operator = document.getElementById("operator").value;
+      let result = document.getElementById("result");
+
+      if (isNaN(num1) || isNaN(num2)) {
+        result.innerText = "Please enter valid numbers.";
+        return;
+      }
+
+      let calculation;
+
+      switch (operator) {
+        case "+":
+          calculation = num1 + num2;
+          break;
+        case "-":
+          calculation = num1 - num2;
+          break;
+        case "*":
+          calculation = num1 * num2;
+          break;
+        case "/":
+          if (num2 === 0) {
+            result.innerText = "Cannot divide by zero!";
+            return;
+          }
+          calculation = num1 / num2;
+          break;
+        default:
+          result.innerText = "Invalid operator!";
+          return;
+      }
+
+      result.innerText = `Result: ${calculation}`;
+    }
+  </script>
+</body>
+</html>

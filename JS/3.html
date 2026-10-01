@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text Change Example</title>
+</head>
+<body>
+  <h1 id="heading">Original Text</h1>
+    <input type="text" id="newtext">
+  <button id="button">Change Text</button>
+
+  <script>
+    button.onmouseenter=()=> {
+      var nt=document.getElementById("newtext").value;
+      document.getElementById("heading").innerText =nt;
+      nt.value=" ";
+    }
+  </script>
+</body>
+</html>
