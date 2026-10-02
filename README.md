@@ -1,109 +1,79 @@
-```markdown
-# ⚡ EdSpark — Web Development Workshop & Webinar
+<div align="center">
 
-<p align="center">
-  🎓 <strong>Official Resource & Notes Repository for the College Web Development Webinar</strong>
-</p>
+# ⚡ EdSpark
+### Web Development Workshop & Webinar Series
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Webinar-Live%20Workshop-blue?style=for-the-badge&logo=google-classroom&logoColor=white" alt="Webinar" />
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-</p>
+*A complete hands-on learning repository with code samples, live project demos, and study materials.*
 
 ---
 
-## 👥 Webinar Presenters & Coordinators
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)](https://github.com/lakshan2906/EdSpark)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)](https://github.com/lakshan2906/EdSpark)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://github.com/lakshan2906/EdSpark)
+[![Status](https://img.shields.io/badge/Webinar-Live_Notes-success?style=flat-square)](https://github.com/lakshan2906/EdSpark)
 
-| Sl. No. | Presenter / Coordinator | Role |
-| :---: | :--- | :--- |
-| **1** | **Mythli R** | Webinar Lead & Speaker |
-| **2** | **Rifaath Fathima** | Webinar Lead & Speaker |
-| **3** | **Lakshan M** | Technical Lead & Repository Maintainer |
-
----
-
-## 🎯 About The Webinar
-
-Welcome to **EdSpark**! This repository contains all the code samples, interactive projects, live demo files, visual cheat sheets, and handwritten study notes covered during our hands-on Web Development webinar.
-
-### 🧠 What You Will Learn:
-1. **HTML5 Essentials**: Page structure, semantic tags, forms, tables, and media.
-2. **CSS3 & Responsive Design**: Box model, Flexbox, CSS Grid layouts, and animations.
-3. **JavaScript Fundamentals**: Logic building, DOM manipulation, and dynamic event handling.
-4. **Hands-on Projects**: Building real-world web pages and interactive mini-apps from scratch.
+</div>
 
 ---
 
-## 🗺️ Webinar Session Roadmap & Code Files
+## 🎙️ Session Presenters
 
-### 📑 1. HTML & CSS Track (`/HTML_CSS`)
-| File | Topic Covered | Description |
-| :--- | :--- | :--- |
-| [`1_HTML.html`](./HTML_CSS/1_HTML.html) | HTML Basics | Headings, paragraphs, hyperlinks, lists, and structure |
-| [`1_CSS.html`](./HTML_CSS/1_CSS.html) | CSS Intro | Basic selectors, inline/internal styling, typography |
-| [`2.html`](./HTML_CSS/2.html) | CSS Layouts | Box model, spacing, colors, and borders |
-| [`sample_site.html`](./HTML_CSS/sample_site.html) | Landing Page Demo | **BitSpark Solutions** layout with modern navigation bar |
-| [`Sample.html`](./HTML_CSS/Sample.html) | Responsive UI | **"My Travel Bucket List"** card grid with FontAwesome icons |
+- 👩‍🏫 **Mythli R** — *Webinar Lead & Speaker*
+- 👩‍🏫 **Rifaath Fathima** — *Webinar Lead & Speaker*
+- 👨‍💻 **Lakshan M** — *Technical Lead & Maintainer*
 
 ---
 
-### ⚡ 2. JavaScript & Interactivity Track (`/JS`)
-| File | Topic Covered | Description |
-| :--- | :--- | :--- |
-| [`1.html` – `6.html`](./JS/) | Core JS Syntax | Variables, functions, conditionals, loops & events |
-| [`8.html`](./JS/8.html) | **Project: To-Do App** | Adding tasks, toggling completion, deleting items |
-| [`9.HTML`](./JS/9.HTML) | **Project: Dynamic Filter** | Filtering products by category dynamically using JSON data |
+## 📚 Quick Learning Track
+
+### 1️⃣ HTML & CSS Fundamentals
+> **Folder:** [`/HTML_CSS`](./HTML_CSS)
+
+- [`1_HTML.html`](./HTML_CSS/1_HTML.html) — Basic HTML tags, document structure, headings, paragraphs, and lists.
+- [`1_CSS.html`](./HTML_CSS/1_CSS.html) — Intro to CSS styling, colors, fonts, and selectors.
+- [`2.html`](./HTML_CSS/2.html) — Box model, margins, padding, and borders.
+- [`sample_site.html`](./HTML_CSS/sample_site.html) — **BitSpark Solutions** landing page layout.
+- [`Sample.html`](./HTML_CSS/Sample.html) — **Travel Bucket List** responsive card grid design.
 
 ---
 
-### 📚 3. Reference Notes & Downloadable Cheat Sheets (`/Reference_Notes`)
+### 2️⃣ JavaScript & DOM Manipulation
+> **Folder:** [`/JS`](./JS)
 
-> [!TIP]
-> Download these notes for your quick revision after the webinar session!
-
-* 📄 **Handwritten CSS Guide**: [`CSS Notes/My CSS hand written.pdf`](./Reference_Notes/CSS%20Notes/My%20CSS%20hand%20written.pdf) *(Detailed PDF)*
-* 🖼️ **CSS Cheat Sheet**: [`CSS Notes/CSS_Cheat_Sheet.jpg`](./Reference_Notes/CSS%20Notes/CSS_Cheat_Sheet.jpg)
-* 🖼️ **HTML Step-by-Step Module Notes**: [`HTML_Notes/`](./Reference_Notes/HTML_Notes/) *(Visual breakdown 1 to 9)*
-* 🖼️ **JavaScript Cheat Sheet**: [`Java_Script/JS_Cheat_Sheet.jpeg`](./Reference_Notes/Java_Script/JS_Cheat_Sheet.jpeg)
-* 🖼️ **Full-Stack Cheat Sheet**: [`[HTML,CSS,TS]Cheat_Sheet.jpg`](./Reference_Notes/%5BHTML,CSS,TS%5DCheat_Sheet.jpg)
+- [`1.html`](./JS/1.html) to [`6.html`](./JS/6.html) — Variables, operators, conditionals, functions, and events.
+- [`8.html`](./JS/8.html) — 📝 **To-Do List App** *(Add, complete, and delete tasks)*.
+- [`9.HTML`](./JS/9.HTML) — 🛒 **Category Product Filter** *(Dynamic UI filtering using JSON)*.
 
 ---
 
-## 🚀 How to Use This Repository (For Attendees)
+### 3️⃣ Reference Notes & Cheat Sheets
+> **Folder:** [`/Reference_Notes`](./Reference_Notes)
 
-### Option 1: Direct Download (ZIP)
-1. Click on the green **`Code`** button at the top right of this GitHub page.
-2. Select **`Download ZIP`**.
-3. Extract the folder and open any `.html` file directly in your web browser.
+| Resource | Type | Link |
+| :--- | :---: | :--- |
+| **Handwritten CSS Complete Notes** | 📄 PDF | [Download PDF](./Reference_Notes/CSS%20Notes/My%20CSS%20hand%20written.pdf) |
+| **CSS Quick Cheat Sheet** | 🖼️ Image | [View Sheet](./Reference_Notes/CSS%20Notes/CSS_Cheat_Sheet.jpg) |
+| **HTML Step-by-Step Module Notes** | 📁 Folder | [Open Folder](./Reference_Notes/HTML_Notes) |
+| **JavaScript Quick Cheat Sheet** | 🖼️ Image | [View Sheet](./Reference_Notes/Java_Script/JS_Cheat_Sheet.jpeg) |
+| **Full-Stack (HTML/CSS/TS) Cheat Sheet** | 🖼️ Image | [View Sheet](./Reference_Notes/%5BHTML,CSS,TS%5DCheat_Sheet.jpg) |
 
-### Option 2: Clone with Git (Recommended)
-```bash
-# 1. Clone the repository
-git clone https://github.com/lakshan2906/EdSpark.git
+---
 
-# 2. Navigate to the project folder
+## 🛠️ Hands-on Projects Overview
+
+EdSpark Projects ├── 📝 Simple To-Do List (JS/8.html) ├── 🛍️ Dynamic Product Filter (JS/9.HTML) ├── ✈️ Travel Bucket List (HTML_CSS/Sample.html) └── 🌐 BitSpark Landing Page (HTML_CSS/sample_site.html)
+
+---
+
+## 🚀 How to Run Locally
+
+1. **Clone or Download** this repository:
+   ```bash
+   git clone https://github.com/lakshan2906/EdSpark.git
+Navigate into the folder:
+bash
 cd EdSpark
-```
-
-### Running with VS Code Live Server:
-1. Open the cloned folder in **Visual Studio Code**.
-2. Install the **Live Server** extension (`ritwickdey.LiveServer`).
-3. Right-click on any `.html` file (e.g. `JS/8.html` or `HTML_CSS/Sample.html`) and click **"Open with Live Server"**.
-
----
-
-## 💡 Practice Challenges for Attendees
-
-* [ ] Add a priority tag (High / Medium / Low) to the To-Do app in `JS/8.html`.
-* [ ] Add a search bar to filter products in `JS/9.HTML`.
-* [ ] Customize the Travel Bucket List with your own destinations in `HTML_CSS/Sample.html`.
-
----
-
-<p align="center">
-  Made with ❤️ for our College Webinar Participants.<br/>
-  <strong>Don't forget to ⭐ star this repository if you enjoyed the session!</strong>
-</p>
-```
+Open files:
+Double-click any .html file to open it in your browser.
+Or open in VS Code and click "Open with Live Server".
+🌟 Star this repository if you found the webinar session helpful!
