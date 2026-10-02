@@ -1,17 +1,26 @@
-# ⚡ EdSpark
-### 🎓 Web Development Workshop & Webinar Series
+<div align="center">
 
-A complete hands-on learning repository with code samples, live project demos, and study materials.
+# ⚡ EdSpark
+### Web Development Workshop & Webinar Series
+
+*A complete hands-on learning repository with code samples, live project demos, and study materials.*
+
+---
+
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)](https://github.com/lakshan2906/EdSpark)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)](https://github.com/lakshan2906/EdSpark)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://github.com/lakshan2906/EdSpark)
+[![Status](https://img.shields.io/badge/Webinar-Live_Notes-success?style=flat-square)](https://github.com/lakshan2906/EdSpark)
+
+</div>
 
 ---
 
 ## 🎙️ Session Presenters
 
-| Sl. No. | Presenter / Coordinator | Role |
-| :---: | :--- | :--- |
-| 1 | **Mythli R** | Webinar Lead & Speaker |
-| 2 | **Rifaath Fathima** | Webinar Lead & Speaker |
-| 3 | **Lakshan M** | Technical Lead & Repository Maintainer |
+* 👨‍💻 **Lakshan M** 
+* 👩‍🏫 **Rifaath Fathima** 
+* 👩‍🏫 **Mythli R** 
 
 ---
 
