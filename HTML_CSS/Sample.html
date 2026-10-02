@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Travel Bucket List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px 0;
+            background: linear-gradient(135deg, #6B73FF 0%, #000DFF 100%);
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        /* Bucket List Grid */
+        .bucket-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        /* Destination Card Styles */
+        .destination {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+        
+        .destination:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .destination-image {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+        
+        .destination-content {
+            padding: 25px;
+            position: relative;
+        }
+        
+        .country-flag {
+            position: absolute;
+            top: -20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            border: 2px solid white;
+        }
+        
+        .destination h2 {
+            margin-bottom: 15px;
+            font-size: 1.8rem;
+            padding-right: 50px;
+        }
+        
+        .destination p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+        
+        .destination-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .priority {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+        
+        /* Color Themes for Each Destination */
+        .japan {
+            background: linear-gradient(to bottom, #ffffff 0%, #f9f9f9 100%);
+        }
+        
+        .japan .destination-content {
+            border-top: 5px solid #BC002D;
+        }
+        
+        .japan .priority {
+            background-color: #BC002D;
+            color: white;
+        }
+        
+        .italy {
+            background: linear-gradient(to bottom, #ffffff 0%, #f9f9f9 100%);
+        }
+        
+        .italy .destination-content {
+            border-top: 5px solid #009246;
+        }
+        
+        .italy .priority {
+            background-color: #009246;
+            color: white;
+        }
+        
+        .new-zealand {
+            background: linear-gradient(to bottom, #ffffff 0%, #f9f9f9 100%);
+        }
+        
+        .new-zealand .destination-content {
+            border-top: 5px solid #012169;
+        }
+        
+        .new-zealand .priority {
+            background-color: #012169;
+            color: white;
+        }
+        
+        .peru {
+            background: linear-gradient(to bottom, #ffffff 0%, #f9f9f9 100%);
+        }
+        
+        .peru .destination-content {
+            border-top: 5px solid #D91023;
+        }
+        
+        .peru .priority {
+            background-color: #D91023;
+            color: white;
+        }
+        
+        .iceland {
+            background: linear-gradient(to bottom, #ffffff 0%, #f9f9f9 100%);
+        }
+        
+        .iceland .destination-content {
+            border-top: 5px solid #02529C;
+        }
+        
+        .iceland .priority {
+            background-color: #02529C;
+            color: white;
+        }
+        
+        .south-africa {
+            background: linear-gradient(to bottom, #ffffff 0%, #f9f9f9 100%);
+        }
+        
+        .south-africa .destination-content {
+            border-top: 5px solid #E03C31;
+        }
+        
+        .south-africa .priority {
+            background-color: #E03C31;
+            color: white;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .bucket-list {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Travel Bucket List</h1>
+            <p class="subtitle">Dream destinations waiting to be explored</p>
+        </header>
+        
+        <div class="bucket-list">
+            <!-- Destination 1: Japan -->
+            <div class="destination japan">
+                <img src="https://images.unsplash.com/photo-1492571350019-22de08371fd3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Tokyo, Japan" class="destination-image">
+                <div class="destination-content">
+                    <img src="https://flagcdn.com/w80/jp.png" alt="Japan Flag" class="country-flag">
+                    <h2>Japan</h2>
+                    <p>Experience the perfect blend of ancient traditions and cutting-edge technology in Tokyo, Kyoto's temples, and the cherry blossoms in spring.</p>
+                    <div class="destination-meta">
+                        <span><i class="fas fa-calendar-alt"></i> Spring 2024</span>
+                        <span class="priority">High Priority</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Destination 2: Italy -->
+            <div class="destination italy">
+                <img src="https://images.unsplash.com/photo-1533676802871-eca1ae998cd5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Venice, Italy" class="destination-image">
+                <div class="destination-content">
+                    <img src="https://flagcdn.com/w80/it.png" alt="Italy Flag" class="country-flag">
+                    <h2>Italy</h2>
+                    <p>From the canals of Venice to the ruins of Rome and the vineyards of Tuscany, Italy offers endless cultural and culinary delights.</p>
+                    <div class="destination-meta">
+                        <span><i class="fas fa-calendar-alt"></i> Fall 2024</span>
+                        <span class="priority">Medium Priority</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Destination 3: New Zealand -->
+            <div class="destination new-zealand">
+                <img src="https://images.unsplash.com/photo-1507699622108-4be3abd695ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Milford Sound, New Zealand" class="destination-image">
+                <div class="destination-content">
+                    <img src="https://flagcdn.com/w80/nz.png" alt="New Zealand Flag" class="country-flag">
+                    <h2>New Zealand</h2>
+                    <p>Adventure through Middle-earth landscapes, from the fjords of Milford Sound to the geothermal wonders of Rotorua.</p>
+                    <div class="destination-meta">
+                        <span><i class="fas fa-calendar-alt"></i> 2025</span>
+                        <span class="priority">High Priority</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Destination 4: Peru -->
+            <div class="destination peru">
+                <img src="https://images.unsplash.com/photo-1526397751294-331021109fbd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Machu Picchu, Peru" class="destination-image">
+                <div class="destination-content">
+                    <img src="https://flagcdn.com/w80/pe.png" alt="Peru Flag" class="country-flag">
+                    <h2>Peru</h2>
+                    <p>Hike the Inca Trail to Machu Picchu, explore the Amazon rainforest, and discover the rich history of the Inca civilization.</p>
+                    <div class="destination-meta">
+                        <span><i class="fas fa-calendar-alt"></i> 2025</span>
+                        <span class="priority">Medium Priority</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Destination 5: Iceland -->
+            <div class="destination iceland">
+                <img src="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Iceland Northern Lights" class="destination-image">
+                <div class="destination-content">
+                    <img src="https://flagcdn.com/w80/is.png" alt="Iceland Flag" class="country-flag">
+                    <h2>Iceland</h2>
+                    <p>Witness the Northern Lights, soak in geothermal lagoons, and explore dramatic waterfalls and volcanic landscapes.</p>
+                    <div class="destination-meta">`
+                        <span><i class="fas fa-calendar-alt"></i> Winter 2026</span>
+                        <span class="priority">Low Priority</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Destination 6: South Africa -->
+            <div class="destination south-africa">
+                <img src="https://images.unsplash.com/photo-1523800503107-5bc3ba2a6f81?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Cape Town, South Africa" class="destination-image">
+                <div class="destination-content">
+                    <img src="https://flagcdn.com/w80/za.png" alt="South Africa Flag" class="country-flag">
+                    <h2>South Africa</h2>
+                    <p>Go on safari in Kruger National Park, explore Cape Town's Table Mountain, and drive along the scenic Garden Route.</p>
+                    <div class="destination-meta">
+                        <span><i class="fas fa-calendar-alt"></i> 2026</span>
+                        <span class="priority">Medium Priority</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Created with adventure | &copy; 2025 My Travel Bucket List</p>
+        </footer>
+    </div>
+</body>
+</html>

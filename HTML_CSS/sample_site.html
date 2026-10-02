@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BitSpark Solutions</title>
+  <style>
+    * {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f5f5f5;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: black;
+      color: white;
+      padding: 15px 30px;
+    }
+
+    .brand h2 {
+      text-transform: uppercase;
+      font-size: 24px;
+    }
+
+    .brand p {
+      color: grey;
+      font-size: 14px;
+    }
+
+    .menu a {
+      background-color: yellow;
+      padding: 8px 12px;
+      color: black;
+      text-decoration: none;
+      border-radius: 1.2rem;
+      margin-left: 10px;
+      font-weight: 500;
+    }
+
+    .summa  {
+      background-color: blue;
+      padding: 8px 12px;
+      color: rgb(41, 196, 101);
+      text-decoration: none;
+      border-radius: 1.2rem;
+      margin-left: 10px;
+      font-weight: 500;
+    }
+
+    .menu a:hover {
+      background-color: brown;
+      color: white;
+    }
+
+    .summa a:hover {
+      background-color: rgb(238, 83, 155);
+      color: white;
+    }
+
+    .container {
+      background-image: url('./img.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 5px black;
+      text-align: center;
+    }
+
+    .hero-text h1 {
+      font-size: 48px;
+    }
+
+    .hero-text p {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    section {
+      padding: 60px 30px;
+    }
+
+    .about, .services, .contact {
+      background-color: white;
+      margin: 20px auto;
+      max-width: 1000px;
+      box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      padding: 30px;
+    }
+
+    .about h2, .services h2, .contact h2 {
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: black;
+      color: white;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .menu {
+        margin-top: 10px;
+      }
+
+      .container .hero-text h1 {
+        font-size: 32px;
+      }
+
+      .container .hero-text p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="brand">
+      <h2>BitSpark Solutions</h2>
+      <p>We Believe, You Gain</p>
+    </div>
+    <div class="menu">
+      <a href="#about">About us</a>
+      <a href="#contact">Contact Us</a>
+      <a href="#services">What We Do</a>
+      <a href="#vision">Our Vision</a>
+    </div>
+    <div class="summa">
+        <a href="#link">Our Link</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="hero-text">
+      <h1>Innovate. Build. Transform.</h1>
+      <p>Your Trusted Tech Partner for Digital Solutions</p>
+    </div>
+  </div>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>BitSpark Solutions is a technology-driven company passionate about building impactful software and web solutions. We help businesses grow with smart strategies, clean code, and effective designs.</p>
+  </section>
+
+  <section id="services" class="services">
+    <h2>What We Do</h2>
+    <ul>
+      <li>Web Design & Development</li>
+      <li>Mobile App Development</li>
+      <li>Software Solutions</li>
+      <li>Cloud & Hosting Services</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: contact@bitsparksolutions.com</p>
+    <p>Phone: +91 98765 43210</p>
+    <p>Location: Chennai, India</p>
+  </section>
+
+  <section id="vision" class="about">
+    <h2>Our Vision</h2>
+    <p>To become a global leader in digital innovation, providing future-ready technology solutions that empower businesses to scale and thrive in a competitive world.</p>
+  </section>
+
+  <section id="Link" class="link">
+
+  </section>
+
+  <footer>
+    &copy; 2025 BitSpark Solutions. All rights reserved.
+  </footer>
+
+</body>
+</html>

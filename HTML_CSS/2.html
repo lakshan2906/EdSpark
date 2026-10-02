@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Box with Header Menu</title>
+  <style>
+    /* Header styles */
+    .header {
+        background-color: #333;
+        padding: 10px 20px;
+        color: white;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .centre {
+        text-align: center;
+    }
+
+    .menu {
+        position: relative;
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+    .menu-button {
+        background-color: #555;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+        z-index: 1;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 10px 15px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    .menu:hover .dropdown-content {
+        display: block;
+    }
+
+    /* Box styles */
+    .box {
+        width: 300px;
+        background-color: lightblue;
+        border: 2px solid #000;
+        position: absolute;
+        top: 200px;
+        left: 450px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        border-radius: 10px;
+    }
+
+    .dropdown-container {
+        margin-top: 10px;
+    }
+
+    label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+
+    select {
+        width: 100%;
+        padding: 5px;
+        margin-top: 5px;
+        border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+
+<!-- Box with dropdowns -->
+<div class="box">
+    <div class="centre">This is a box</div>
+
+    <div class="dropdown-container">
+        <label for="menu1">Menu 1</label>
+        <select id="menu1">
+            <option value="">-- Select Option --</option>
+            <option value="Option 1A">Option 1A</option>
+            <option value="Option 1B">Option 1B</option>
+        </select>
+
+        <label for="menu2">Menu 2</label>
+        <select id="menu2">
+            <option value="">-- Select Option --</option>
+            <option value="Option 2A">Option 2A</option>
+            <option value="Option 2B">Option 2B</option>
+        </select>
+
+        <label for="menu3">Menu 3</label>
+        <select id="menu3">
+            <option value="">-- Select Option --</option>
+            <option value="Option 3A">Option 3A</option>
+            <option value="Option 3B">Option 3B</option>
+        </select>
+    </div>
+</div>
+
+</body>
+</html>
