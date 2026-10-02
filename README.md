@@ -20,7 +20,7 @@
 ## 🎙️ Session Presenters
 
 - 👨‍💻 **Lakshan M**
-- 👩‍🏫 **Rifaath Fathima**
+- 👩‍🏫 **Rifaath Fathimah S**
 - 👩‍🏫 **Mythli R**
 
 ---
